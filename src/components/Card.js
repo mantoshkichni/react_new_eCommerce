@@ -20,8 +20,8 @@ export const Cart = ({ item }) => {
   };
   return (
     <div
-      class="card m-2 mt-4 col col-3"
-      style={{ width: "15rem", backgroundImage: `URL(${item.image})` }}
+      class="card m-2 mt-4 col col-md-3 col-sm-4 col-6 col-xsm-6"
+      style={{ width: "12rem", backgroundImage: `URL(${item.image})` }}
     >
       {/* <img src={item.image} class="card-img-top" alt="..."/> */}
       <button className="description" onClick={() => getdata(item)}>

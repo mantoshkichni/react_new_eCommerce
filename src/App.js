@@ -10,13 +10,9 @@ export default function App() {
   const { state } = useContext(ProductContext);
   console.log(state);
   return (
-    <div className="App container">
+    <div className="App ">
       <Navbar />
-      <div className="item1"></div>
-      <div className="item2"></div>
-      <div className="item3"></div>
-      <div className="item4"></div>
-      <div className="item5"></div>
+
       <Routes>
         <Route path="/" element={<Home products={state.products} />} />
         <Route path="/carts" element={<Cart />} />
